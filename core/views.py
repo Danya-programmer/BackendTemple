@@ -6,3 +6,4 @@ from .serializers import ScheduleSerializer
 class ListSchedule(generics.ListAPIView):
     queryset = Schedule.objects.all()
     serializer_class = ScheduleSerializer
+
