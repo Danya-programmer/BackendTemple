@@ -22,5 +22,49 @@ class PoorhousePeople(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'Подопечный богодельни'
+        verbose_name = 'Подопечного богодельни'
         verbose_name_plural = 'Подопечные богодельни'
+
+
+class TemplePhotogallery(models.Model):
+    image = models.ImageField(upload_to='photogallery/temple', verbose_name='Фотография храма')
+
+    def __str__(self):
+        return 'Фотография храма'
+
+    class Meta:
+        verbose_name = 'Фотографию храма'
+        verbose_name_plural = 'Фотографии храма'
+
+
+class BelltowerPhotogallery(models.Model):
+    image = models.ImageField(upload_to='photogallery/belltower', verbose_name='Фотография колокольни')
+
+    def __str__(self):
+        return 'Фотография колокольни'
+
+    class Meta:
+        verbose_name = 'Фотографию колокольни'
+        verbose_name_plural = 'Фотографии колокольни'
+
+
+class PoorhousePhotogallery(models.Model):
+    image = models.ImageField(upload_to='photogallery/poorhouse', verbose_name='Фотография богадельни')
+
+    def __str__(self):
+        return 'Фотография богадельни'
+
+    class Meta:
+        verbose_name = 'Фотографию богадельни'
+        verbose_name_plural = 'Фотографии богадельни'
+
+
+class MercyBusPhotogallery(models.Model):
+    image = models.ImageField(upload_to='photogallery/mercybus', verbose_name='Фотография автобуса милосердия')
+
+    def __str__(self):
+        return 'Фотография автобуса милосердия'
+
+    class Meta:
+        verbose_name = 'Фотографию автобуса милосердия'
+        verbose_name_plural = 'Фотографии автобуса милосердия'
