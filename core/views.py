@@ -31,3 +31,9 @@ class ListPoorhousePhotogallery(generics.ListAPIView):
 class ListMercyBusPhotogallery(generics.ListAPIView):
     queryset = MercyBusPhotogallery.objects.all()
     serializer_class = MercyBusPhotogallerySerializer
+
+
+class ListMersyBusStation(generics.ListAPIView):
+    queryset = MersyBusStation.objects.all()
+    serializer_class = MersyBusStationSerializer
+

@@ -8,4 +8,5 @@ admin.site.register(TemplePhotogallery)
 admin.site.register(BelltowerPhotogallery)
 admin.site.register(PoorhousePhotogallery)
 admin.site.register(MercyBusPhotogallery)
+admin.site.register(MersyBusStation)
 # Register your models here.

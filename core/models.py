@@ -68,3 +68,14 @@ class MercyBusPhotogallery(models.Model):
     class Meta:
         verbose_name = 'Фотографию автобуса милосердия'
         verbose_name_plural = 'Фотографии автобуса милосердия'
+
+
+class MersyBusStation(models.Model):
+    image = models.ImageField(upload_to='mercybusstation', verbose_name='Фотография расписания стоянок')
+
+    def __str__(self):
+        return 'Фотография расписания стоянок'
+
+    class Meta:
+        verbose_name = 'Фотография расписания стоянок'
+        verbose_name_plural = 'Фотографии расписания стоянок'

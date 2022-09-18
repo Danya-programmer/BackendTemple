@@ -36,3 +36,9 @@ class MercyBusPhotogallerySerializer(serializers.ModelSerializer):
     class Meta:
         model = MercyBusPhotogallery
         fields = '__all__'
+
+
+class MersyBusStationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = MersyBusStation
+        fields = '__all__'

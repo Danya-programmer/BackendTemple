@@ -9,4 +9,5 @@ urlpatterns = [
     path('photogallery/belltower', ListBelltowerPhotogallery.as_view()),
     path('photogallery/poorhouse', ListPoorhousePhotogallery.as_view()),
     path('photogallery/mersybus', ListMercyBusPhotogallery.as_view()),
+    path('mersybusstations/', ListMersyBusStation.as_view()),
 ]
